@@ -8,6 +8,9 @@
     <meta name="author" content="Generation Brasil">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Contato</title>
 </head>
 
@@ -30,50 +33,49 @@
     </header>
 
     <!-- Seção Principal da Página (main) -->
-    <main>
+    <main class="main_contato">
 
+        <!-- Seção do Formulário -->
+        <form action="#" method="submit" id="formulario">
 
-        <!-- Seção Principal da Página (main) -->
-        <main>
+            <label for="nome">Nome</label>
+            <input id="name" type="text" name="name" placeholder="Digite seu nome:">
+            <span id="errNome"></span>
 
-            <!-- Seção do Formulário -->
-            <form action="#" method="submit" id="formulario">
+            <label for="email">Email</label>
+            <input id="email" type="text" name="email" placeholder="Digite seu email:">
+            <span id="errEmail"></span>
 
-                <label for="nome">Nome</label>
-                <input id="name" type="text" name="name" placeholder="Digite seu nome:">
-                <span id="errNome"></span>
+            <label for="subject">Assunto: </label>
+            <input id="subject" type="text" name="subject" placeholder="Digite o assunto da mensagem:">
+            <span id="errSubject"></span>
 
-                <label for="email">Email</label>
-                <input id="email" type="text" name="email" placeholder="Digite seu email:">
-                <span id="errEmail"></span>
+            <label for="message">Mensagem: </label>
+            <textarea id="message" name="message" placeholder="Digite sua mensagem"></textarea>
 
-                <label for="subject">Assunto: </label>
-                <input id="subject" type="text" name="subject" placeholder="Digite o assunto da mensagem:">
-                <span id="errSubject"></span>
+            <button type="submit">Enviar</button>
 
-                <label for="message">Mensagem: </label>
-                <textarea id="message" name="message" placeholder="Digite sua mensagem"></textarea>
+        </form>
 
-                <button type="submit">Enviar</button>
+        <!-- Seção do Google Maps -->
+        <article class="article_mapa">
 
-            </form>
+            <address>
+                <p>Av. Paulista, 100</p>
+                <p>São Paulo - SP</p>
+            </address>
 
-            <!-- Seção do Google Maps -->
-            <article>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.4350254898486!2d-46.39330585910882!3d-23.516850960048778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce64920890cbe9%3A0x560da0b594c1c72!2sEE%20Livio%20Xavier!5e0!3m2!1spt-BR!2sbr!4v1755820559545!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                <address>
-                    <p>Av. Paulista, 100</p>
-                    <p>São Paulo - SP</p>
-                </address>
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.4350254898486!2d-46.39330585910882!3d-23.516850960048778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce64920890cbe9%3A0x560da0b594c1c72!2sEE%20Livio%20Xavier!5e0!3m2!1spt-BR!2sbr!4v1755820559545!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            </article>
-
-        </main>
-
+        </article>
 
     </main>
+
+
+
 
     <!-- Rodapé da Página (footer) -->
     <footer>
@@ -100,6 +102,8 @@
         </h3>
 
     </footer>
+
+
 
 </body>
 
